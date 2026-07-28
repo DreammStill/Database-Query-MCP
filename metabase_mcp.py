@@ -13,7 +13,7 @@ Metabase MCP 服务器（只读查询，支持原生 SQL 与 MongoDB 聚合管�
 4. 结果过滤：summarize=True 时只返回关键信息，去除冗余元数据
 
 环境变量说明：
-    METABASE_URL       服务器地址（默认 https://metabase.starmerx.com）
+    METABASE_URL       服务器地址（默认 https://metabase.yoururl.com）
     METABASE_USERNAME  登录用户名
     METABASE_PASSWORD  登录密码
     METABASE_SESSION   可选，直接传入现成 session token（跳过登录）
@@ -68,7 +68,7 @@ def load_config() -> Dict[str, Any]:
             if k not in config:
                 config[k] = v
 
-    config.setdefault("url", "https://metabase.starmerx.com")
+    config.setdefault("url", "https://metabase.yoururl.com")
     # 规范化 URL：去除末尾斜杠
     config["url"] = config["url"].rstrip("/")
     return config
