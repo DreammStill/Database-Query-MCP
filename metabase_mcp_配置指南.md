@@ -48,7 +48,7 @@
 
 | 环境变量 | 必填 | 默认值 | 说明 |
 |----------|------|--------|------|
-| `METABASE_URL` | 否 | https://metabase.starmerx.com | 服务器地址 |
+| `METABASE_URL` | 否 | - | 服务器地址 |
 | `METABASE_USERNAME` | 二选一 | - | 登录用户名（账号密码方式） |
 | `METABASE_PASSWORD` | 二选一 | - | 登录密码（账号密码方式） |
 | `METABASE_SESSION` | 二选一 | - | 现成 session token（跳过登录） |
@@ -73,7 +73,7 @@
     "command": "C:\\path\\to\\metabase_mcp.exe",
     "args": [],
     "env": {
-        "METABASE_URL": "https://metabase.starmerx.com",
+        "METABASE_URL": "https://metabase.yoururl.com",
         "METABASE_USERNAME": "your_username",
         "METABASE_PASSWORD": "your_password",
         "PYTHONIOENCODING": "utf-8"
@@ -88,7 +88,7 @@
     "command": "C:\\path\\to\\metabase_mcp.exe",
     "args": [],
     "env": {
-        "METABASE_URL": "https://metabase.starmerx.com",
+        "METABASE_URL": "https://metabase.yoururl.com",
         "METABASE_SESSION": "your_session_token",
         "PYTHONIOENCODING": "utf-8"
     }
@@ -101,7 +101,7 @@
 
 ```json
 {
-    "url": "https://metabase.starmerx.com",
+    "url": "https://metabase.yoururl.com",
     "username": "your_username",
     "password": "your_password"
 }
